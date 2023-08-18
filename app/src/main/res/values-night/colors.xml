@@ -1,0 +1,40 @@
+
+<resources>
+    <color name="seed">#004359</color>
+    <color name="md_theme_primary">#35A1D1</color>
+    <color name="md_theme_onPrimary">#003547</color>
+    <color name="md_theme_primaryContainer">#004D66</color>
+    <color name="md_theme_onPrimaryContainer">#BFE8FF</color>
+    <color name="md_theme_secondary">#B4CAD6</color>
+    <color name="md_theme_onSecondary">#1F333D</color>
+    <color name="md_theme_secondaryContainer">#364954</color>
+    <color name="md_theme_onSecondaryContainer">#D0E6F3</color>
+    <color name="md_theme_tertiary">#FFBA33</color>
+    <color name="md_theme_onTertiary">#422C00</color>
+    <color name="md_theme_tertiaryContainer">#5F4100</color>
+    <color name="md_theme_onTertiaryContainer">#FFDEAB</color>
+    <color name="md_theme_error">#FFB4AB</color>
+    <color name="md_theme_errorContainer">#93000A</color>
+    <color name="md_theme_onError">#690005</color>
+    <color name="md_theme_onErrorContainer">#FFDAD6</color>
+    <color name="md_theme_background">#191C1E</color>
+    <color name="md_theme_onBackground">#E1E2E5</color>
+    <color name="md_theme_surface">#191C1E</color>
+    <color name="md_theme_onSurface">#E1E2E5</color>
+    <color name="md_theme_surfaceVariant">#40484C</color>
+    <color name="md_theme_onSurfaceVariant">#C0C7CD</color>
+    <color name="md_theme_outline">#8A9297</color>
+    <color name="md_theme_inverseOnSurface">#191C1E</color>
+    <color name="md_theme_inverseSurface">#E1E2E5</color>
+    <color name="md_theme_inversePrimary">#35A1D1</color>
+    <color name="md_theme_shadow">#000000</color>
+    <color name="md_theme_surfaceTint">#6ED2FF</color>
+    <color name="md_theme_outlineVariant">#40484C</color>
+    <color name="md_theme_scrim">#000000</color>
+    <color name="white_100">#EDEDED</color>
+    <color name="white_200">#40484C</color>
+    <color name="white_300">#ACACAC</color>
+    <color name="see_all">#35A1D1</color>
+    <color name="text_color_secondary">#677075</color>
+    <color name="card_production_background">#EAECED</color>
+</resources>

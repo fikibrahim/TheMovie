@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="@dimen/cardview_default_elevation">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:background="@color/card_production_background"
+            android:src="@drawable/ic_placeholder_movie"
+            tools:srcCompat="@tools:sample/avatars[2]"
+            android:contentDescription="@string/image" />
+        <ImageView
+            android:paddingTop="60dp"
+            android:src="@drawable/bottom_dark_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:contentDescription="@string/shadow" />
+        <ImageView
+            android:contentDescription="@string/play"
+            android:layout_centerInParent="true"
+            android:src="@drawable/baseline_play_circle_24"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title"
+            android:textColor="@color/white_100"
+            tools:text="Video Title"
+            android:textSize="11sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"/>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

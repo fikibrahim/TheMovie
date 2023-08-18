@@ -1,0 +1,55 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+    compileSdk AndroidConfig.compileSdk
+
+    defaultConfig {
+        minSdk AndroidConfig.minSdk
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "BASE_URL", AndroidConfig.baseURL)
+            buildConfigField("String", "IMAGE_URL", AndroidConfig.imageURL)
+            buildConfigField("String", "API_KEY", AndroidConfig.apiKey)
+            buildConfigField("Integer", "PAGE_SIZE", AndroidConfig.pageSize)
+            buildConfigField("Integer", "DEFAULT_PAGE_INDEX", AndroidConfig.defaultPageIndex)
+        }
+        debug {
+            buildConfigField("String", "BASE_URL", AndroidConfig.baseURL)
+            buildConfigField("String", "IMAGE_URL", AndroidConfig.imageURL)
+            buildConfigField("String", "API_KEY", AndroidConfig.apiKey)
+            buildConfigField("Integer", "PAGE_SIZE", AndroidConfig.pageSize)
+            buildConfigField("Integer", "DEFAULT_PAGE_INDEX", AndroidConfig.defaultPageIndex)
+        }
+    }
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation Misc.hiltAndroid
+    kapt Misc.hiltCompiler
+
+    implementation Misc.moshi
+    implementation Misc.moshiKotlin
+    implementation Misc.converterMoshi
+
+    testImplementation Testing.junit
+    androidTestImplementation Testing.extJunit
+    androidTestImplementation Testing.espressoCore
+}

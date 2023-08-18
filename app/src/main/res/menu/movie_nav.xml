@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/movie_home"
+        android:enabled="true"
+        android:icon="@drawable/selector_movies_icon"
+        android:title="@string/movies"/>
+    <item
+        android:id="@+id/movie_watchlist"
+        android:enabled="true"
+        android:icon="@drawable/selector_watchlist_icon"
+        android:title="@string/title_watchlist"/>
+</menu>

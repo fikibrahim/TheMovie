@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="200dp"
+    android:layout_width="300dp">
+    <com.google.android.material.card.MaterialCardView
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/itemRow"
+        android:layout_height="200dp"
+        android:layout_width="300dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:strokeColor="@android:color/transparent">
+        <RelativeLayout
+            android:layout_height="200dp"
+            android:layout_width="300dp">
+            <ImageView
+                android:id="@+id/backdropView"
+                android:layout_height="150dp"
+                android:layout_width="300dp"
+                android:layout_marginBottom="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_placeholder_movie"
+                tools:srcCompat="@tools:sample/avatars[0]"
+                android:contentDescription="@string/image" />
+            <View
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottom_gradient"
+                android:layout_marginBottom="49dp"
+                android:layout_width="300dp"
+                android:layout_height="120dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/posterViewLayout"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/posterView"
+                    android:layout_width="70dp"
+                    android:layout_height="105dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_placeholder_movie"
+                    tools:srcCompat="@tools:sample/avatars[2]"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/medium"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_above="@id/ratingBar"
+                android:layout_toEndOf="@id/posterViewLayout"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Title" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/posterViewLayout"
+                android:isIndicator="true"
+                android:numStars="1"
+                android:rating="1"
+                android:stepSize="0.1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/vote"
+                tools:text="1.0"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="15dp"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/releaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTitle"
+                android:layout_toEndOf="@id/vote"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="5dp"
+                android:textSize="11sp"
+                tools:text="2023" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

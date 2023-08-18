@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Movies</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="movies">Movies</string>
+    <string name="favorite">Favorites</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">The Movies</string>
+    <string name="title_detail">Movie Detail</string>
+    <string name="title_watchlist">Watch List</string>
+    <string name="image">image</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="genre">Genre</string>
+    <string name="all">All</string>
+    <string name="retry">Retry</string>
+    <string name="error_message">Error message</string>
+    <string name="popular">Popular</string>
+    <string name="see_all">See all</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="setting">Setting</string>
+    <string name="close">Close</string>
+    <string name="change_theme">Theme</string>
+    <string name="apply">Apply</string>
+    <string name="setting_theme">Setting Theme</string>
+    <string name="genre_">Genres :</string>
+    <string name="overview">Overview</string>
+    <string name="overview_">Overview :</string>
+    <string name="production">Production</string>
+    <string name="release_date">Release Date</string>
+    <string name="popularity">Popularity</string>
+    <string name="play">play</string>
+    <string name="video">Videos</string>
+    <string name="trailers_videos"><![CDATA[Trailers & Videos]]></string>
+    <string name="shadow">shadow</string>
+    <string name="cast">Cast</string>
+    <string name="read_all_reviews">Read All Reviews</string>
+    <string name="reviews">Reviews</string>
+    <string name="resizable_text_read_more">\n....read more</string>
+    <string name="resizable_text_read_less">....read less</string>
+</resources>
